@@ -1,6 +1,6 @@
 import { useAtom } from "jotai";
 import { Child } from "../child";
-import { countAtom } from "../../atoms";
+import { countAtom } from "../../state/blogAtoms";
 
 const Parent = () => {
   const [count, setCount] = useAtom<number>(countAtom);

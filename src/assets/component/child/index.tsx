@@ -1,5 +1,5 @@
 import { useAtomValue } from "jotai";
-import { countAtom } from "../../atoms";
+import { countAtom } from "../../state/blogAtoms";
 
 export const Child = () => {
   const parentCount = useAtomValue(countAtom);
