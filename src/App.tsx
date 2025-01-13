@@ -1,15 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import BlogList from "./assets/pages/BlogList";
-import NewBlog from "./assets/pages/NewBlog";
+import Home from "./assets/pages/Home";
+import CreatePost from "./assets/pages/CreatePost";
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
-        <Route path="/blogs" element={<BlogList />} />
-        <Route path="/new" element={<NewBlog />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<CreatePost />} />
       </Routes>
     </Router>
   );

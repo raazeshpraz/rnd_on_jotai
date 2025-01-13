@@ -6,5 +6,4 @@ export interface Blog {
   content: string;
 }
 
-export const blogListAtom = atom<Blog[]>([]);
-export const selectedBlogAtom = atom<Blog | null>(null);
+export const blogsAtom = atom<Blog[]>([]);
