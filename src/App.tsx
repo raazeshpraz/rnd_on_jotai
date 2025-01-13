@@ -1,14 +1,17 @@
-import "./App.css";
-import BlogCard from "./assets/component/BlogCard";
-import Header from "./assets/component/Header";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import BlogList from "./pages/BlogList";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <Header />
-      <BlogCard />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blogs" element={<BlogList />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -26,4 +26,5 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
     </div>
   );
 };
+
 export default BlogCard;
