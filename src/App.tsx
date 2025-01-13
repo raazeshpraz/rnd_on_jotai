@@ -1,8 +1,8 @@
 import "./App.css";
-import Parent from "./assets/component/parent";
+import Header from "./assets/component/Header";
 
 function App() {
-  return <Parent />;
+  return <Header />;
 }
 
 export default App;
